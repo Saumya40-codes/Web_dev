@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<head>
+  <title>Survey form</title>
+  <style media="screen">
+      body {
+            font-family: Verdana;
+            text-align: center;
+            font-size: 20px;
+            background: linear-gradient(135deg, #71b7e6 , #9b59b6);
+        }
+    .start{
+      text-align:center;
+      font-family: cursive;
+      font-style: Lucida-Handwriting;
+      font-weight: bold;
+      font-size: 50px;
+    }
+    form ,.container{
+            background-color: #fff;
+            max-width: 60%;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    .name,.mail,.pass,.gen,.opt,.exp,.comment{
+      border-color: linear-gradient(135deg, #71b7e6 , #9b59b6);
+      text-align: center;
+      background-color: #B3B6B7;
+      color: #008080;
+      margin: 5px 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      display: block;
+      border-left-color: rgba(0, 0, 0, 0.5);
+    }
+    .gen,.exp{
+      cursor: pointer;
+    }
+    button[type=submit] {
+  background:linear-gradient(135deg, #71b7e6 , #9b59b6) ;
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact{
+  text-align: center;
+  background-color: #B3B6B7;
+}
+.container{
+  border-radius: 5px;
+}
+img[id="img1"]{
+  width: 30px;
+  height: auto;
+  border-radius:5px;
+}
+a[id="link"]{
+  color: #008080;
+  cursor: pointer;
+}
+input[type="checkbox"]{
+  width:20px;
+  height: 20px;
+  cursor: pointer;
+}
+select[id="opt"]{
+  width: 120px;
+  height: 25px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="">
+    <form id ="form" action="res.html" method="GET">
+      <div class="start"><legend>Survey Form</legend>  </div>
+      <div class="name">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter you name" autofocus required>
+      </div>
+      <div class="mail">
+        <label for="mail">E-mail</label>
+        <input type="email" name="mail" placeholder="Enter your e-mail address" autofocus required>
+      </div>
+      <div class="pass">
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password" autofocus required>
+      </div>
+      <div class="gen">
+        <fieldset>
+          <legend>Gender</legend>
+        <input type="radio" name="gender">Male</input>
+        <input type="radio" name="gender">Female</input>
+        <input type="radio" name="gender">Prefer not to say</input>
+        </fieldset>
+      </div>
+      <div class="opt">
+        <label for="select">Current Status</label>
+        <select id="opt" class="prof" name="profession">
+          <option value="High School">High School</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Undergraduate">Undergraduate</option>
+          <option value="Employee">Employee</option>
+        </select>
+      </div>
+      <div class="exp">
+        <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label> <br>
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">C</input></label><br>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">C++</input></label><br>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">C#</input></label><br>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Java</input></label><br>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Python</input></label><br>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">JavaScript</input></label><br>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">React</input></label><br>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Django</input></label><br>
+            <label for="inp-7">
+                <input type="checkbox"
+                         name="inp">Spring</input></label>
+      </div>
+      <div class="comment">
+        <label for="comment">
+                  Suggestions
+              <textarea name="comment" id="comment"
+                  placeholder="Enter your Suggestions here" style="height:20px width:30px">
+              </textarea>
+              </label>
+      </div>
+      <div class="submit">
+        <button type="submit" value="submit">
+            Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="container">
+  <fieldset>
+    <legend>Contact ME</legend>
+    <div class="contact">
+      <label><img id="img1" src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github.img"><a id="link" href="https//github.com/Saumya40-codes">Github</a></label><br>
+      <label><img id="img1" src="https://imgs.search.brave.com/jkxNtJWJvru6498gGAo9yb-zRbhJync602AmggQILb0/rs:fit:600:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5G/UGpRMk9vbFdnTkhF/RExYa0lmOThBSGFG/MiZwaWQ9QXBp" alt="linkedin.img"><a id="link" href="https://www.linkedin.com/in/saumya-shah-326537252/">Linkedin</a></label><br>
+      <label for="gmail"><img id="img1" src="https://imgs.search.brave.com/Akfc2gKmNLTJBbhMMCHx1z7jLFP8rMJ7ZJiQzD5L1To/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5B/bXh4TmNCLWdwaTlZ/Ujk2QjBrQkt3SGFI/YSZwaWQ9QXBp" alt="mail.img"> <a id="link" href="mailto:saumya.s2@ahduni.edu.in">E-mail Me</a></label>
+      </div>
+    </fieldset>
+  </div>
+</body>
+</html>
