@@ -5,6 +5,13 @@
 <head>
   <title>Survey form</title>
   <style media="screen">
+  @keyframes change {
+    0% {color:white;left:0px;}
+    25% {color: aqua;left:95px;}
+    50% {color:blue;left:-95px;}
+    75%{color:pink;left:0px;}
+    100%{color:red;right:0px;}
+  }
       body {
             font-family: Verdana;
             text-align: center;
@@ -16,8 +23,13 @@
       font-family: serif;
       font-style:  Garamond;
       font-weight: bold;
-      font-size: 50px;
+      position: relative;
       color: #bd00ad;
+      font-size: 50px;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
     }
     form ,.container{
             background-color: #bdffad;
