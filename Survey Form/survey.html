@@ -6,11 +6,11 @@
   <title>Survey form</title>
   <style media="screen">
   @keyframes change {
-    0% {color:white;left:0px;}
-    25% {color: aqua;left:95px;}
-    50% {color:blue;left:-95px;}
-    75%{color:pink;left:0px;}
-    100%{color:red;right:0px;}
+    0% {color:white;left:0px;font-style: italic;}
+    25% {color: aqua;left:95px;font-family: cursive;}
+    50% {color:blue;left:-95px;font-family: sans-serif;}
+    75%{color:pink;left:0px;font-family: serif;}
+    100%{color:red;right:0px;font-weight: lighter;}
   }
       body {
             font-family: Verdana;
@@ -31,6 +31,9 @@
       animation-delay: 2s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
+    }
+    .start:hover{
+      rotate:180deg;
     }
     form ,.container{
             background-color: #bdffad;
@@ -105,7 +108,32 @@ a:hover{
   font-family: monospace;
   font-size: 90%;
 }
+div a[name="adrop"]{
+  text-decoration: none;
+  color: aqua;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 400px;
+  display: none;
+}
+ul li ul li {
+  background: #555;
+  display: block;
+}
 
+ul li ul li:hover {background: #666;}
   </style>
 </head>
 <body>
@@ -123,7 +151,17 @@ a:hover{
       </div>
       <div class="pass">
         <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Enter your password" autofocus required>
+        <input type="password" name="password" placeholder="Enter your password" autofocus required> <br>
+        <div class="drop">
+          <ul>
+            <li>
+            <a href="#">Forgot password</a>
+            <ul>
+            <li><a href="https://support.google.com/accounts/answer/41078?hl=en" target="_blank" name="adrop">Reset your password from here!</a></li>
+          </ul>
+          </li>
+          </ul>
+        </div>
       </div>
       <div class="gen">
         <fieldset>
